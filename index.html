@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Panel de Procesos</title>
+        <link href="styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="app"></div>
+
+        <script>
+            var initialData = {
+                "processes": [
+                    { "id": 1, "title": "Proceso #1" },
+                    { "id": 2, "title": "Proceso #2" },
+                    { "id": 3, "title": "Proceso #3" },
+                    { "id": 4, "title": "Proceso #4" },
+                    { "id": 5, "title": "Proceso #5" },
+                    { "id": 6, "title": "Proceso #6" }
+                ],
+                "works": [
+                    { "id": 8992, "title": "Item #1", "processes": [{ "id": 1, "id_process": 1, "value": 0 }, { "id": 2, "id_process": 2, "value": 0 }, { "id": 3, "id_process": 3, "value": 0 }, { "id": 4, "id_process": 4, "value": 0 }] },
+                    { "id": 8991, "title": "Otro ingreso", "processes": [{ "id": 5, "id_process": 2, "value": 0 }, { "id": 6, "id_process": 3, "value": 0 }, { "id": 7, "id_process": 4, "value": 0 }, { "id": 8, "id_process": 5, "value": 0 }] },
+                    { "id": 4883, "title": "Trabajo especial", "processes": [{ "id": 9, "id_process": 1, "value": 0 }, { "id": 10, "id_process": 3, "value": 1 }, { "id": 11, "id_process": 4, "value": 0 }, { "id": 12, "id_process": 6, "value": 1 }] },
+                    { "id": 12, "title": "Más y más", "processes": [{ "id": 13, "id_process": 1, "value": 0 }, { "id": 14, "id_process": 2, "value": 0 }, { "id": 15, "id_process": 3, "value": 0 }, { "id": 16, "id_process": 6, "value": 0 }] },
+                    { "id": 9099, "title": "Item #5", "processes": [{ "id": 17, "id_process": 3, "value": 0 }, { "id": 18, "id_process": 4, "value": 1 }, { "id": 19, "id_process": 5, "value": 0 }] },
+                    { "id": 10221, "title": "Trabajo normal", "processes": [{ "id": 21, "id_process": 1, "value": 0 }, { "id": 22, "id_process": 4, "value": 0 }, { "id": 23, "id_process": 5, "value": 1 }, { "id": 24, "id_process": 6, "value": 0 }] },
+                    { "id": 4882, "title": "Trabajo especial #2", "processes": [{ "id": 25, "id_process": 2, "value": 0 }, { "id": 26, "id_process": 4, "value": 0 }, { "id": 27, "id_process": 5, "value": 0 }] },
+                    { "id": 122, "title": "Item #8", "processes": [{ "id": 29, "id_process": 1, "value": 1 }, { "id": 30, "id_process": 4, "value": 0 }, { "id": 31, "id_process": 5, "value": 1 }, { "id": 32, "id_process": 6, "value": 0 }] },
+                    { "id": 899, "title": "Item #9", "processes": [{ "id": 33, "id_process": 1, "value": 0 }, { "id": 34, "id_process": 2, "value": 0 }, { "id": 35, "id_process": 3, "value": 0 }] },
+                    { "id": 2990, "title": "Item #10", "processes": [{ "id": 36, "id_process": 4, "value": 1 }, { "id": 37, "id_process": 5, "value": 0 }, { "id": 38, "id_process": 6, "value": 0 }] }
+                ]
+            };
+        </script>
+        <script src="lib/react-0.13.3.js"></script>
+        <script src="app.js"></script>
+    </body>
+</html>
